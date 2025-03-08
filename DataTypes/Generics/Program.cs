@@ -70,6 +70,10 @@ namespace Generics
             // Equipo de Tennis
             Team<TennisPlayer> tennisTeamGen = new Team<TennisPlayer>(1);
 
+            // Para evitar esto, se pone una restricción con el keyword "where" en la clase genérica llamada Team<T>
+            // public class Team<T> where T : Athlete
+            // Team<string> tennisTeamGen1;
+
             tennisTeamGen.CoachName = "José";
 
             tennisTeamGen.Members[0] = tennisPlayer;

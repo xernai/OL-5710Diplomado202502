@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Entitities
 {
     // <T> se conoce como placeholder (plantilla)
-    public class Team<T>
+    public class Team<T> where T : Athlete
     {
         public string CoachName { get; set; }
 
@@ -16,6 +16,11 @@ namespace Entitities
         public Team(int maxMembers)
         {
             Members = new T[maxMembers];
+        }
+
+        public void PrintCoachName()
+        {
+            Console.WriteLine($"Nombre del Coach: {CoachName}");
         }
     }
 }
