@@ -1,0 +1,6 @@
+@Tesmon.Ecommerce.WebAPI_HostAddress = http://localhost:5177
+
+GET {{Tesmon.Ecommerce.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
