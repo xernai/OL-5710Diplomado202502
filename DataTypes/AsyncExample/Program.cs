@@ -74,6 +74,10 @@ namespace AsyncExample
 
             await Task.Delay(5000);
             int result = await task;
+
+            // user validation
+            // WaitAll(task, task1, task2)
+            // WaitAny(task, task1, task2)
             Console.WriteLine($"Resultado es: {result}");
         }
 
