@@ -1,6 +1,5 @@
 ﻿using AzureBlobStorageDemo.API.Models;
 using AzureBlobStorageDemo.API.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AzureBlobStorageDemo.API.Controllers
@@ -11,7 +10,7 @@ namespace AzureBlobStorageDemo.API.Controllers
     {
         private readonly IBlobStorage _blobService;
 
-        public FilesController(IBlobStorage blobService)
+        public FilesController(IBlobStorage blobService) // BlobStorage blobService = new BlobStorage()
         {
             _blobService = blobService;
         }
