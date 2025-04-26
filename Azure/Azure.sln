@@ -40,6 +40,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGridSendConsole", "Mes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGridTriggerFunction", "Functions\EventGridTriggerFunction\EventGridTriggerFunction.csproj", "{00CA69E6-42A9-46D7-BCD7-3B79C8543438}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ServiceBus.ReceiveSample", "Message Services\Service Bus\Azure.ServiceBus.ReceiveSample\Azure.ServiceBus.ReceiveSample.csproj", "{367B7586-0502-44D8-87C1-D50DE01D5D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ServiceBus.SendSample", "Message Services\Service Bus\Azure.ServiceBus.SendSample\Azure.ServiceBus.SendSample.csproj", "{144760DC-89E4-4B7F-8D4D-FA061A4F167A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event Hub", "Event Hub", "{02C68E66-C34D-4D71-A6D9-FDEDBD731101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMessagesTajamar", "Message Services\Event Hub\EventHubsTajamar\SendMessagesTajamar.csproj", "{EC1015F0-C3C7-4940-A63F-B98604F11B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceptorMensagesTajamar", "Message Services\Event Hub\ReceptorMensagesTajamar\ReceptorMensagesTajamar.csproj", "{9D3793BB-444F-443D-855B-87EE84A6A91C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +92,22 @@ Global
 		{00CA69E6-42A9-46D7-BCD7-3B79C8543438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00CA69E6-42A9-46D7-BCD7-3B79C8543438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00CA69E6-42A9-46D7-BCD7-3B79C8543438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367B7586-0502-44D8-87C1-D50DE01D5D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367B7586-0502-44D8-87C1-D50DE01D5D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367B7586-0502-44D8-87C1-D50DE01D5D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367B7586-0502-44D8-87C1-D50DE01D5D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144760DC-89E4-4B7F-8D4D-FA061A4F167A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144760DC-89E4-4B7F-8D4D-FA061A4F167A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144760DC-89E4-4B7F-8D4D-FA061A4F167A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144760DC-89E4-4B7F-8D4D-FA061A4F167A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1015F0-C3C7-4940-A63F-B98604F11B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1015F0-C3C7-4940-A63F-B98604F11B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1015F0-C3C7-4940-A63F-B98604F11B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1015F0-C3C7-4940-A63F-B98604F11B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,5 +126,10 @@ Global
 		{F2389EE9-9D44-4CA3-8F50-C09BBF2BADA0} = {7EA8C52E-E282-4442-9A9F-D81734124978}
 		{42190EEE-5837-422B-997C-CA3A9F952031} = {7EA8C52E-E282-4442-9A9F-D81734124978}
 		{00CA69E6-42A9-46D7-BCD7-3B79C8543438} = {7DCE1873-06D8-475E-AFDC-8D670A017138}
+		{367B7586-0502-44D8-87C1-D50DE01D5D4B} = {5E5C003C-A774-4CBC-AB58-833C2C690B36}
+		{144760DC-89E4-4B7F-8D4D-FA061A4F167A} = {5E5C003C-A774-4CBC-AB58-833C2C690B36}
+		{02C68E66-C34D-4D71-A6D9-FDEDBD731101} = {ECA3652B-B003-4364-BFB5-78726F8829BA}
+		{EC1015F0-C3C7-4940-A63F-B98604F11B2D} = {02C68E66-C34D-4D71-A6D9-FDEDBD731101}
+		{9D3793BB-444F-443D-855B-87EE84A6A91C} = {02C68E66-C34D-4D71-A6D9-FDEDBD731101}
 	EndGlobalSection
 EndGlobal
