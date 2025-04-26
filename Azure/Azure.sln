@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMessagesTajamar", "Mess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceptorMensagesTajamar", "Message Services\Event Hub\ReceptorMensagesTajamar\ReceptorMensagesTajamar.csproj", "{9D3793BB-444F-443D-855B-87EE84A6A91C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp1", "Functions\FunctionApp1\FunctionApp1.csproj", "{D0386193-462D-4322-9052-7847B712F1D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,10 @@ Global
 		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D3793BB-444F-443D-855B-87EE84A6A91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0386193-462D-4322-9052-7847B712F1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0386193-462D-4322-9052-7847B712F1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0386193-462D-4322-9052-7847B712F1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0386193-462D-4322-9052-7847B712F1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,5 +137,6 @@ Global
 		{02C68E66-C34D-4D71-A6D9-FDEDBD731101} = {ECA3652B-B003-4364-BFB5-78726F8829BA}
 		{EC1015F0-C3C7-4940-A63F-B98604F11B2D} = {02C68E66-C34D-4D71-A6D9-FDEDBD731101}
 		{9D3793BB-444F-443D-855B-87EE84A6A91C} = {02C68E66-C34D-4D71-A6D9-FDEDBD731101}
+		{D0386193-462D-4322-9052-7847B712F1D5} = {7DCE1873-06D8-475E-AFDC-8D670A017138}
 	EndGlobalSection
 EndGlobal

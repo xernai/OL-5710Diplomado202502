@@ -6,16 +6,14 @@ using Microsoft.Azure.WebJobs.Extensions.EventGrid;
 using Microsoft.Extensions.Logging;
 using Azure.Messaging.EventGrid;
 
-namespace EventGridTriggerFunction
+namespace FunctionApp1
 {
-    public static class EventGridTriggerReceiver
+    public static class Function1
     {
-        [FunctionName("EventGridTriggerReceiver")]
+        [FunctionName("Function1")]
         public static void Run([EventGridTrigger]EventGridEvent eventGridEvent, ILogger log)
         {
             log.LogInformation(eventGridEvent.Data.ToString());
-
-            // TODO: segregar la info de eventGridEvent
         }
     }
 }

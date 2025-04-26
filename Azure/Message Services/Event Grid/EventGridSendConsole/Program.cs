@@ -17,7 +17,7 @@ namespace EventGridSendConsole
                 "Advertencia de temperatura alta",
                 "Warning",
                 "1.0",
-                "Tomar medidas contra el calor, sobre todo con los niños."
+                "Tomar medidas contra el calor, sobre todo con la gente."
             ));
             Console.WriteLine("Event has been published.");
         }
