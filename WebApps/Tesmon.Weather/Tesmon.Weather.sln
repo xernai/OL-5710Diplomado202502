@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesmon.Weather.MvcApp", "Tesmon.Weather.MvcApp\Tesmon.Weather.MvcApp.csproj", "{53DFE3CC-DC7D-4EDE-B8DA-8B00550CEEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesmon.Weather.RazorPagesApp", "Tesmon.Weather.RazorPagesApp\Tesmon.Weather.RazorPagesApp.csproj", "{3B4AFEBB-76C9-4BC2-B30D-A622839FD062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesmon.Waather.BlazorWasmStdApp", "Tesmon.Waather.BlazorWasmStdApp\Tesmon.Waather.BlazorWasmStdApp.csproj", "{EE4D6937-0882-412C-A0B4-C83E4DF37AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53DFE3CC-DC7D-4EDE-B8DA-8B00550CEEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DFE3CC-DC7D-4EDE-B8DA-8B00550CEEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DFE3CC-DC7D-4EDE-B8DA-8B00550CEEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DFE3CC-DC7D-4EDE-B8DA-8B00550CEEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4AFEBB-76C9-4BC2-B30D-A622839FD062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4AFEBB-76C9-4BC2-B30D-A622839FD062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4AFEBB-76C9-4BC2-B30D-A622839FD062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4AFEBB-76C9-4BC2-B30D-A622839FD062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4D6937-0882-412C-A0B4-C83E4DF37AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4D6937-0882-412C-A0B4-C83E4DF37AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4D6937-0882-412C-A0B4-C83E4DF37AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4D6937-0882-412C-A0B4-C83E4DF37AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
