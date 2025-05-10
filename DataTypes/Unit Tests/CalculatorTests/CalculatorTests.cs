@@ -6,6 +6,8 @@ namespace CalculatorTests
 {
     public class CalculatorTests
     {
+        // Existe Moq para simular que nos conectamos a la base de datos
+        // Programar a interfaces y no implementacion
         [Fact]
         public void Should_SumTwoNumbers_Success()
         {
@@ -14,8 +16,10 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
 
             // Act
+            // var total = _moq.calculator.GetIncomes().Returns(1000);
             var actualValue = calculator.Sum(2, 2);
             var expectedValue = 4;
+
 
             // Assert
             Assert.Equal(expectedValue, actualValue);

@@ -13,6 +13,10 @@ namespace Utilities
         {
             // TODO
             var result = x + y;
+
+            // Si hubiera una conexion a la base de datos
+            // var total = _conexionDB.GetIncomes(1000)
+
             return result;
         }
 
