@@ -1,4 +1,5 @@
 using Azure.Messaging.ServiceBus;
+using Azure.Messaging.ServiceBus.Administration;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -50,6 +51,7 @@ namespace TopicsFiltersAndActionsWebApi.Controllers
             };
 
             var connectionString = "<YOUR CONNECTION STRING>";
+
             var client = new ServiceBusClient(connectionString);
             var sender = client.CreateSender("weather-forecast-added");
 
@@ -57,9 +59,47 @@ namespace TopicsFiltersAndActionsWebApi.Controllers
             var sbMessage = new ServiceBusMessage(body);
 
             // TODO: si los clientes son de Leon, mandales la oferta si el mes es diciembre
-
             sbMessage.ApplicationProperties.Add("Month", data.Date.ToString("MMMM"));
             await sender.SendMessageAsync(sbMessage);
+
+            // Create new subscription
+            ServiceBusAdministrationClient administrationClient = new ServiceBusAdministrationClient(connectionString);
+
+            await administrationClient.CreateSubscriptionAsync(
+                new CreateSubscriptionOptions("yourtopic", "SqlFilterAndActionSubscription"),
+                new CreateRuleOptions
+                {
+                    Action = new SqlRuleAction("SET Age = Age * 2;"),
+                    Filter = new SqlRuleFilter("Name = 'Azure'"),
+                    Name = "SqlFilterAndAction"
+                }
+            );
+
+            var customer = new Customer
+            {
+                Age = 20,
+                Name = "Azure"
+            };
+
+            var sender1 = client.CreateSender("yourtopic");
+
+            var serviceBusMessage = new ServiceBusMessage()
+            {
+                ApplicationProperties = { { "Name", customer.Name }, { "Age", customer.Age } }
+            };
+
+            await sender1.SendMessageAsync(serviceBusMessage);
+
+            // Update Subscription
+            var createRuleOptions = new CreateRuleOptions
+            {
+                Action = new SqlRuleAction("SET Age = Age * 2;"),
+                Filter = new SqlRuleFilter("Name='Azure'"),
+                Name = "SqlFilterAndAction"
+            };
+            await administrationClient.CreateRuleAsync("weather-forecast-added", "update-report", createRuleOptions);
+
+            await sender.SendMessageAsync(serviceBusMessage);
         }
     }
 }
